@@ -10,13 +10,15 @@ public class FlechaMovement : MonoBehaviour
     private Transform Enemy;
     private int MyNumberInList = 0;
 
-    private float angle;
+    private float angle, currentTime;
     private Quaternion novaRotacao;
 
     public bool NewEnemy = false;
     public bool NewRotation = false;
 
     private EnemyInArea EnemyinAreaScript;
+
+    private bool Alive = true;
 
     // Start is called before the first frame update
 
@@ -27,6 +29,12 @@ public class FlechaMovement : MonoBehaviour
 
     void LateUpdate()
     {
+        currentTime += Time.deltaTime;
+        if(currentTime >= 3.5f)
+        {
+            FlechaDisable();
+        }
+
         if (NewEnemy)
         {
             CallANewOponent(Enemy, MyNumberInList, EnemyinAreaScript);
@@ -72,6 +80,8 @@ public class FlechaMovement : MonoBehaviour
 
     public void FlechaDisable()
     {
+        currentTime = 0;
+        Alive = false;
         EnemyinAreaScript.FlechaEnable(MyNumberInList);
         gameObject.SetActive(false);
     }

@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - CoinsManager
+  - Enemy
+  - GameOver
+  - GameWon
+  - Inimigo
   layers:
   - Default
   - TransparentFX

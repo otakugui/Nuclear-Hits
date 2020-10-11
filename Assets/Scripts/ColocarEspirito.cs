@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class ColocarEspirito : MonoBehaviour
 {
-    public void Spawn(GameObject Torre1)
+    public GameObject Torre1;
+    void OnMouseUp()
     {
-       Instantiate(Torre1, transform.position, Quaternion.identity);
+              Instantiate(Torre1, transform.position, Quaternion.identity);
     }
-
-
-        
 }
 

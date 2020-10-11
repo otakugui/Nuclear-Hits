@@ -418,6 +418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &55789767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1361,6 +1362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &231743369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2034,6 +2036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &336345979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2343,6 +2346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &361390289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,6 +2616,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &396170630
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2923,6 +2928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &440765793 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -3096,6 +3102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &453159733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3742,6 +3749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &557358557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -3972,6 +3980,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &608756429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -4145,6 +4154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &642624955 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -4708,6 +4718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &687863111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5180,6 +5191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &760778545 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -5353,6 +5365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &812286967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5641,6 +5654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &847415036
 GameObject:
   m_ObjectHideFlags: 0
@@ -5957,6 +5971,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &856513398 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -6536,6 +6551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &904687729
 GameObject:
   m_ObjectHideFlags: 0
@@ -6673,6 +6689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &914690856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7127,6 +7144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &964030453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6511650091049742334, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -7463,6 +7481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1001018055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7742,6 +7761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1073012729
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8010,6 +8030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1100115170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -8306,6 +8327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1197735798
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,6 +8465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1199522165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8823,6 +8846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1247088200 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4607922985383663911, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -9001,6 +9025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1272681594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -9143,6 +9168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1280851152
 GameObject:
   m_ObjectHideFlags: 0
@@ -9880,6 +9906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1421531721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10248,6 +10275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1478868065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10765,6 +10793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1529448262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10967,6 +10996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1553685258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11539,6 +11569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1568846232
 GameObject:
   m_ObjectHideFlags: 0
@@ -11676,6 +11707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1575273927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -11929,6 +11961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1648191289
 GameObject:
   m_ObjectHideFlags: 0
@@ -12066,6 +12099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1653188827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12203,6 +12237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1666360923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -12467,6 +12502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1691870355
 GameObject:
   m_ObjectHideFlags: 0
@@ -12604,6 +12640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!4 &1726855317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3396847455754002853, guid: e9c9043d5965b8a449423451ed351e5a, type: 3}
@@ -13115,6 +13152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1822057106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4607922985383663931, guid: 47116a9e9b1af9142acef73ecafe3677, type: 3}
@@ -13571,6 +13609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1001 &1900153348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14103,6 +14142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 0
+  Dano: 0
 --- !u!1 &1991544173
 GameObject:
   m_ObjectHideFlags: 0

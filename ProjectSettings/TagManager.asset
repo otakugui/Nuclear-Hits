@@ -9,6 +9,7 @@ TagManager:
   - GameOver
   - GameWon
   - Inimigo
+  - Torre1
   layers:
   - Default
   - TransparentFX

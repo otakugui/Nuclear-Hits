@@ -8,7 +8,7 @@ public class FlechaMovement : MonoBehaviour
     private Rigidbody2D MyRigidBody;
     
     private Transform Enemy;
-
+    private int MyNumberInList = 0;
 
     private float angle;
     private Quaternion novaRotacao;
@@ -16,6 +16,7 @@ public class FlechaMovement : MonoBehaviour
     public bool NewEnemy = false;
     public bool NewRotation = false;
 
+    private EnemyInArea EnemyinAreaScript;
 
     // Start is called before the first frame update
 
@@ -24,24 +25,26 @@ public class FlechaMovement : MonoBehaviour
         MyRigidBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (NewEnemy)
         {
-            CallANewOponent(Enemy);
-            ChangeRotation(Enemy);
+            CallANewOponent(Enemy, MyNumberInList, EnemyinAreaScript);
+            ChangeRotation(Enemy, MyNumberInList, EnemyinAreaScript);
             NewEnemy = false;
         }
         if (NewRotation)
         {
-            ChangeRotation(Enemy);
+            ChangeRotation(Enemy, MyNumberInList, EnemyinAreaScript);
             NewRotation = false;
         }
     }
 
-    public void CallANewOponent(Transform enemy)
+    public void CallANewOponent(Transform enemy, int myNumber, EnemyInArea script)
     {
-        if(MyRigidBody == null)
+        EnemyinAreaScript = script;
+        MyNumberInList = myNumber;
+        if (MyRigidBody == null)
         {
 
             MyRigidBody = gameObject.GetComponent<Rigidbody2D>();
@@ -52,8 +55,10 @@ public class FlechaMovement : MonoBehaviour
         MyRigidBody.velocity = new Vector2((MyForce * ForcePower).x, (MyForce * ForcePower).y);
     }
 
-    public void ChangeRotation(Transform enemy)
+    public void ChangeRotation(Transform enemy, int myNumber, EnemyInArea script)
     {
+        EnemyinAreaScript = script;
+        MyNumberInList = myNumber;
         Enemy = enemy;
         Vector2 MyForce = (Enemy.position - transform.position).normalized;
 
@@ -65,5 +70,9 @@ public class FlechaMovement : MonoBehaviour
     }
 
 
-
+    public void FlechaDisable()
+    {
+        EnemyinAreaScript.FlechaEnable(MyNumberInList);
+        gameObject.SetActive(false);
+    }
 }

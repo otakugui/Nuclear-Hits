@@ -1,26 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColocarEspirito : MonoBehaviour
 {
-    public GameObject monsterPrefab;
-    private GameObject indio;
-    // Start is called before the first frame update
-    private bool CanPlaceMonster()
+    public void Spawn(GameObject Torre1)
     {
-        return indio == null;
+       Instantiate(Torre1, transform.position, Quaternion.identity);
     }
 
-    void OnMouseUp()
-    {
-        //2
-        if (CanPlaceMonster())
-        {
-            //3
-            indio = (GameObject)
-              Instantiate(monsterPrefab, transform.position, Quaternion.identity);
-        }
-    }
 
+        
 }
+

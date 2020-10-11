@@ -26,9 +26,12 @@ public class EnemyInArea : MonoBehaviour
     private float CurrentTime = 0;
     private bool IsShooting = false;
 
+    private EnemyInArea MySelf;
+
     // Start is called before the first frame update
     void Start()
     {
+        MySelf = gameObject.GetComponent<EnemyInArea>();
         MyAnim = gameObject.GetComponent<Animator>();
         DefinitiveY = (transform.position.y + YToAddInVector);
     }
@@ -79,6 +82,7 @@ public class EnemyInArea : MonoBehaviour
     {
 
         bool AcheiUmaFlecha = false;
+        int ct = 0;
         if(Flechas.Count != 0)
         {
             foreach (ListOfFlechas Ins in Flechas)
@@ -88,8 +92,9 @@ public class EnemyInArea : MonoBehaviour
                     AcheiUmaFlecha = true;
                     Ins.Flecha.transform.position = FlechaBorn.position;
                     Ins.Flecha.SetActive(true);
-                    Ins.Flecha.GetComponent<FlechaMovement>().ChangeRotation(TempObj);
+                    Ins.Flecha.GetComponent<FlechaMovement>().ChangeRotation(TempObj, ct, MySelf);
                 }
+                ct++;
             }
         }
 
@@ -98,7 +103,7 @@ public class EnemyInArea : MonoBehaviour
 
         if (!AcheiUmaFlecha)
         {
-
+            int Number = Flechas.Count;
             ListOfFlechas TmpListOfFlechas = new ListOfFlechas();
             TmpListOfFlechas.Flecha = Instantiate(FlechaPrefab as GameObject);
             TmpListOfFlechas.InUse = true;
@@ -111,9 +116,14 @@ public class EnemyInArea : MonoBehaviour
             TmpListOfFlechas.Flecha.SetActive(true);
 
 
-            TmpListOfFlechas.Flecha.GetComponent<FlechaMovement>().ChangeRotation(TempObj);
+            TmpListOfFlechas.Flecha.GetComponent<FlechaMovement>().ChangeRotation(TempObj, Number, MySelf);
         }
 
+    }
+
+    public void FlechaEnable(int MyNumber)
+    {
+        Flechas[MyNumber].InUse = false;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

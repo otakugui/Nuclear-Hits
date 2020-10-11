@@ -7,6 +7,8 @@ public class Arvore : MonoBehaviour
     public int Vida;
     public int Dano;
 
+    private Animator MyAnim;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +34,9 @@ public class Arvore : MonoBehaviour
     public void TomarDano()
     {
         Vida = Vida - Dano;
-        if (Vida >= 0)
+        if (Vida <= 0)
         {
-            Destroy(gameObject);
+            MyAnim.SetBool("Died", true);
         }
     }
 

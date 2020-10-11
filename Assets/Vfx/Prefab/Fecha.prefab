@@ -48743,6 +48743,8 @@ GameObject:
   - component: {fileID: 3665537022057879874}
   - component: {fileID: 124806239}
   - component: {fileID: 124806238}
+  - component: {fileID: 9209835934541523681}
+  - component: {fileID: 6008643493808825849}
   m_Layer: 0
   m_Name: Fecha
   m_TagString: Untagged
@@ -48834,6 +48836,39 @@ MonoBehaviour:
   ForcePower: 9
   NewEnemy: 0
   NewRotation: 0
+--- !u!58 &9209835934541523681
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969245772398441241}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.011691928}
+  serializedVersion: 2
+  m_Radius: 0.28564537
+--- !u!114 &6008643493808825849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969245772398441241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad278021a58b5e4a8b0b8d0d455da2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitPrefab: {fileID: 7893203570941871567, guid: e4aead83c04b23042bc6cc9477534bcb, type: 3}
+  damage: 10
+  MyEventsWhenHit:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6969245772418183047
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scene/Menu Principal.unity
     guid: f8224ab5aff68b146a4987e045bf0bdd
   - enabled: 1
-    path: Assets/Scene/Cena_main.unity
-    guid: f25073470eaba8e40ad3ab09dec7aaeb
+    path: Assets/Scene/Cena_final Augusto.unity
+    guid: e0a3411e9bba5ca409ad301159143086
   - enabled: 1
     path: Assets/Scene/Creditos.unity
     guid: 1dedca312d46a0140b20a232d25cfa99

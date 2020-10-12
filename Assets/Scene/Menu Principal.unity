@@ -455,9 +455,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867c10ec2d3e81c4e8cbe5fb342b768c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cena_main: Cena_main
+  Cena_main: Cena_final Augusto
   Creditos: Creditos
   Retornar: 
+  trilha_MenuPrincipal: {fileID: 0}
+  trilha_Gameplay_fase1: {fileID: 0}
 --- !u!1 &1227430026
 GameObject:
   m_ObjectHideFlags: 0

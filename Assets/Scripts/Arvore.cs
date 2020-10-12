@@ -5,19 +5,28 @@ using UnityEngine;
 public class Arvore : MonoBehaviour
 {
     public int Vida;
+    public bool destruction = false;
+    private float currentTime =0;
 
     private Animator MyAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        MyAnim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (destruction)
+        {
+            currentTime += Time.deltaTime;
+            if(currentTime >= 1.5f)
+            {
+                    MyAnim.SetBool("Died", true);
+            }
+        }
     }
 
 
@@ -26,12 +35,11 @@ public class Arvore : MonoBehaviour
     {
         if (collision.gameObject.tag =="EnemyLenhador")
         {
-            //perde vida
-            TomarDano();
+
+            destruction = true;
 
         }
     }
-
     public void TomarDano()
     {
         Vida--;
@@ -41,8 +49,4 @@ public class Arvore : MonoBehaviour
         }
     }
 
-
-    //caso o dano nao funcione, destroi direto
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{if (collision.CompareTag("Inimigo"))
 }

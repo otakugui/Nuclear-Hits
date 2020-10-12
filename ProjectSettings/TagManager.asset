@@ -49,3 +49,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Chao
+    uniqueID: 4273119225
+    locked: 0
+  - name: Espiritos
+    uniqueID: 1486710631
+    locked: 0
+  - name: 2
+    uniqueID: 948702021
+    locked: 0

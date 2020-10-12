@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8285737663246924310, guid: 80208419003dcf14bbe005aa6f5c2178, type: 3}
       propertyPath: m_Name
-      value: india
+      value: india Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8285737663246924311, guid: 80208419003dcf14bbe005aa6f5c2178, type: 3}
       propertyPath: m_Sprite
@@ -66,6 +66,10 @@ PrefabInstance:
     - target: {fileID: 8285737663246924312, guid: 80208419003dcf14bbe005aa6f5c2178, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285737663246924313, guid: 80208419003dcf14bbe005aa6f5c2178, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -3912792614762396656, guid: 80208419003dcf14bbe005aa6f5c2178, type: 3}

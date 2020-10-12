@@ -11,7 +11,7 @@ public class Arvore : MonoBehaviour
     private Animator MyAnim;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         MyAnim = gameObject.GetComponent<Animator>();
     }
@@ -22,24 +22,20 @@ public class Arvore : MonoBehaviour
         if (destruction)
         {
             currentTime += Time.deltaTime;
-            if(currentTime >= 1.5f)
+            if(currentTime >= .2f)
             {
-                    MyAnim.SetBool("Died", true);
+                MyAnim.SetBool("Died", true);
             }
         }
     }
 
 
- 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D()
     {
-        if (collision.gameObject.tag =="EnemyLenhador")
-        {
+        destruction = true;
 
-            destruction = true;
-
-        }
     }
+
     public void TomarDano()
     {
         Vida--;

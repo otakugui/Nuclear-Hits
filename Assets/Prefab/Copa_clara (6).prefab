@@ -1,5 +1,62 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &244449306618693206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7143421564462095581}
+  - component: {fileID: 2183886198178297540}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7143421564462095581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244449306618693206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7436704270677478358}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &2183886198178297540
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244449306618693206}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -1}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1319126570486220173
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +69,7 @@ GameObject:
   - component: {fileID: 5192788779210319876}
   - component: {fileID: 8812664161190183822}
   - component: {fileID: 7622154661654732612}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Copa_clara (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33,6 +90,7 @@ Transform:
   - {fileID: 1278297499462418980}
   - {fileID: 621872696347692790}
   - {fileID: 5192788778070806050}
+  - {fileID: 7143421564462095581}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -75,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Vida: 3
+  destruction: 0
 --- !u!95 &7622154661654732612
 Animator:
   serializedVersion: 3
@@ -104,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1278297499462418980}
   - component: {fileID: 3502622504346080384}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Copa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5192788778070806050}
   - component: {fileID: 5192788778070806049}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Copa (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,6 +324,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7436704270677478358}
     m_Modifications:
+    - target: {fileID: 1106475397, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111297082044386691, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9111297082487106552, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -324,6 +391,14 @@ PrefabInstance:
     - target: {fileID: 9111297082487106559, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111297082487106559, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9111297082503863083, guid: accf3129ddb0a3444bf1640f02687342, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: accf3129ddb0a3444bf1640f02687342, type: 3}

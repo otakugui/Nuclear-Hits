@@ -10,6 +10,8 @@ TagManager:
   - GameWon
   - Inimigo
   - Torre1
+  - EnemyLenhador
+  - Marreta
   layers:
   - Default
   - TransparentFX
@@ -21,9 +23,9 @@ TagManager:
   - 
   - CoinTower
   - 
-  - 
-  - 
-  - 
+  - Enemy2
+  - Cutter
+  - Cutable
   - 
   - 
   - 

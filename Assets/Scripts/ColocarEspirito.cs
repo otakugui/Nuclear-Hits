@@ -11,5 +11,10 @@ public class ColocarEspirito : MonoBehaviour
     {
               Instantiate(Torre1, transform.position, Quaternion.identity);
     }
+
+    void Spawn()
+    {
+        Instantiate(Torre1, transform.position, Quaternion.identity);
+    }
 }
 

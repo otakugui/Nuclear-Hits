@@ -17,7 +17,6 @@ public class Damage : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("Entrou");
         if(collision.tag == "EnemyLenhador")
         {
             MyEventsWhenHit.Invoke();

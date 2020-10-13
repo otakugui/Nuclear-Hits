@@ -8,10 +8,7 @@ public class SpawInimigo : MonoBehaviour
     double contadorTempo = 0;
     public float tempoPraGerar = 1;
     // Start is called before the first frame update
-    void Start()
-    {
-        print(gameObject.name);
-    }
+
 
     // Update is called once per frame
     void Update()

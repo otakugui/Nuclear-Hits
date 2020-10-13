@@ -7,7 +7,8 @@ public class Arvore : MonoBehaviour
     public int Vida;
     public bool destruction = false;
     private float currentTime =0;
-
+    public string DiedAnimationName = "Died";
+    public int DiedAnimationHash;
     private Animator MyAnim;
 
     // Start is called before the first frame update
@@ -19,12 +20,14 @@ public class Arvore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        return;
         if (destruction)
         {
             currentTime += Time.deltaTime;
             if(currentTime >= .2f)
             {
-                MyAnim.SetBool("Died", true);
+                MyAnim.SetBool(DiedAnimationHash, true);
+
             }
         }
     }
@@ -36,13 +39,20 @@ public class Arvore : MonoBehaviour
 
     }
 
-    public void TomarDano()
+    //public void TomarDano()
+    //{
+    //    Vida--;
+    //    if (Vida <= 0)
+    //    {
+    //        MyAnim.SetBool("Died", true);
+    //    }
+    //}
+
+#if UNITY_EDITOR
+    private void OnValidate()
     {
-        Vida--;
-        if (Vida <= 0)
-        {
-            MyAnim.SetBool("Died", true);
-        }
+        DiedAnimationHash = Animator.StringToHash(DiedAnimationName);
     }
+#endif
 
 }

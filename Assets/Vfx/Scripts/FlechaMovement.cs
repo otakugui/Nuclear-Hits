@@ -59,7 +59,7 @@ public class FlechaMovement : MonoBehaviour
         }
         Enemy = enemy;
         Vector2 MyForce = (Enemy.position - transform.position).normalized;
-        print(MyForce);
+
         MyRigidBody.velocity = new Vector2((MyForce * ForcePower).x, (MyForce * ForcePower).y);
     }
 

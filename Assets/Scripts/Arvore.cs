@@ -18,25 +18,25 @@ public class Arvore : MonoBehaviour
     }
 
     // Update is called once per frame
-    //void Update()
-    //{
-    //    return;
-    //    if (destruction)
-    //    {
-    //        currentTime += Time.deltaTime;
-    //        if(currentTime >= .2f)
-    //        {
-    //            MyAnim.SetBool(DiedAnimationHash, true);
+    void Update()
+    {
+        return;
+        if (destruction)
+        {
+            currentTime += Time.deltaTime;
+            if(currentTime >= .2f)
+            {
+                MyAnim.SetBool(DiedAnimationHash, true);
 
-    //        }
-    //    }
-    //}
+            }
+        }
+    }
 
 
     private void OnTriggerEnter2D()
     {
         destruction = true;
-        MyAnim.SetBool(DiedAnimationHash, true);
+
     }
 
     //public void TomarDano()

@@ -6,7 +6,7 @@ public class Arvore : MonoBehaviour
 {
     public int Vida;
     public bool destruction = false;
-    private float currentTime =0;
+    //private float currentTime =0;
     public string DiedAnimationName = "Died";
     public int DiedAnimationHash;
     private Animator MyAnim;
@@ -17,36 +17,25 @@ public class Arvore : MonoBehaviour
         MyAnim = gameObject.GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        return;
-        if (destruction)
-        {
-            currentTime += Time.deltaTime;
-            if(currentTime >= .2f)
-            {
-                MyAnim.SetBool(DiedAnimationHash, true);
 
-            }
-        }
-    }
-
-
-    private void OnTriggerEnter2D()
-    {
-        destruction = true;
-
-    }
-
-    //public void TomarDano()
+    //private void OnTriggerEnter2D(Collider2D collision)
     //{
-    //    Vida--;
-    //    if (Vida <= 0)
+    //    print(collision.tag);
+    //    //destruction = true;
+    //    if(collision.tag == "Cutter")
     //    {
-    //        MyAnim.SetBool("Died", true);
+    //        TomarDano();
     //    }
     //}
+
+    public void TomarDano(int Dmg)
+    {
+        Vida -= Dmg;
+        if (Vida <= 0)
+        {
+            MyAnim.SetBool(DiedAnimationHash, true);
+        }
+    }
 
 #if UNITY_EDITOR
     private void OnValidate()

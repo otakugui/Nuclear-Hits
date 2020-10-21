@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] float HealthAmount;
+    public float HealthAmount;
+    private EnemyMovement EnmScript;
 
+    private void Start()
+    {
+        EnmScript = GetComponent<EnemyMovement>();
+    }
 
     public void TakeDamage(float Damage)
     {
@@ -13,7 +18,7 @@ public class Health : MonoBehaviour
 
         if(HealthAmount <= 0)
         {
-            Destroy(gameObject);
+            EnmScript.Defeated();
         }
     }
 }

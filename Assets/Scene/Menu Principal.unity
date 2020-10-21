@@ -455,7 +455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867c10ec2d3e81c4e8cbe5fb342b768c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cena_main: Cena_final Augusto
+  Cena_main: Cena_final Augusto vNova
   Creditos: Creditos
   Retornar: 
   trilha_MenuPrincipal: {fileID: 0}
